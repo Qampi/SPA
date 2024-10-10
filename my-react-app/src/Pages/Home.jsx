@@ -10,7 +10,7 @@ function Home() {
 }
 export default Home;*/
 import React from 'react';
-import data from './data'; // Make sure the path is correct
+//import data from './data'; // Make sure the path is correct
 
 function Home() {
   return (

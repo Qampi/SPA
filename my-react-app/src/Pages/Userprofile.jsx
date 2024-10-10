@@ -23,11 +23,10 @@ function UserProfile() {
     );
 }*/
 import React, { useState, useEffect } from 'react';
-import Donation from './Donation'; // Make sure the path is correct
+//import Donation from './Donation'; // Make sure the path is correct
 
 function UserProfile() {
   const [userData, setUserData] = useState({});
-
   useEffect(() => {
     const fetchUserData = async () => {
       try {
@@ -47,7 +46,7 @@ function UserProfile() {
       <h2>User Profile</h2>
       <p>Name: {userData.name}</p>
       <p>Email: {userData.email}</p>
-      <Donation />
+      {/* <Donation /> */}
     </div>
   );
 }
