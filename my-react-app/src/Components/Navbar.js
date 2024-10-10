@@ -19,14 +19,14 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/user-profile">User Profile</Link></li>
-        <li><Link to="/donations">Donations</Link></li>
-      </ul>
-    </nav>
+    <header><nav>
+    <ul>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/about">About</Link></li>
+      <li><Link to="/Userprofile">User Profile</Link></li>
+      <li><Link to="/donations">Donations</Link></li>
+    </ul>
+  </nav></header>
   );
 }
 

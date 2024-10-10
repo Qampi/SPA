@@ -1,54 +1,53 @@
-/*import React, { usestate, useeffect } from 'react';
-function UserProfile() {
-    const [userData, setUserData] = useState({});
-    useeffect(() => {
-        const fetchUserData = async () => {
-            try {
-                const response = await fetch('/api/user-profile');
-                const data = await response.json(); 
-                setUserData(data);
-            } catch (error) {
-                console.erroe(error);
-            }
-        };
-        fetchUserData();
-    }, []);
-    return (
-        <div>
-            <h2>User Profile</h2>
-            <p>Name: {userData.name}</p>
-            <p>Email: {userData.email}</p>
-            <Donation/>
-        </div>
-    );
-}*/
-import React, { useState, useEffect } from 'react';
-//import Donation from './Donation'; // Make sure the path is correct
+import React from 'react';
 
-function UserProfile() {
-  const [userData, setUserData] = useState({});
-  useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const response = await fetch('/api/user-profile');
-        const data = await response.json();
-        setUserData(data);
-      } catch (error) {
-        console.error(error); // Fixed typo
-      }
-    };
+// Sample data: list of users
+const users = [
+  {
+    id: 1,
+    name: 'John Doe',
+    age: 28,
+    email: 'john@example.com',
+    location: 'New York',
+    interests: ['UNICEF (Global education initiative']
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    age: 34,
+    email: 'jane@example.com',
+    location: 'California',
+    interests: ['UCT Lung Cancer Institute']
+  },
+  {
+    id: 3,
+    name: 'Alex Johnson',
+    age: 23,
+    email: 'alex@example.com',
+    location: 'Texas',
+    interests: ['Red Cross Children Hospital']
+  },
+  // Add more users as needed
+];
 
-    fetchUserData();
-  }, []);
-
+const Userprofile = () => {
   return (
-    <div class="user">
-      <h2>User Profile</h2>
-      <p>Name: {userData.name}</p>
-      <p>Email: {userData.email}</p>
-      {/* <Donation /> */}
+    <div>
+      <h2>User Profiles</h2>
+      <div className="user-list">
+        {users.map((user) => (
+          <div key={user.id} className="user-card">
+            <h3>{user.name}</h3>
+            <p><strong>Age:</strong> {user.age}</p>
+            <p><strong>Email:</strong> {user.email}</p>
+            <p><strong>Location:</strong> {user.location}</p>
+            <p><strong>Interests:</strong> {user.interests.join(', ')}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-export default UserProfile;
+export default Userprofile;
+
+
