@@ -32,7 +32,7 @@ const users = [
 const Userprofile = () => {
   return (
     <div>
-      <h2>User Profiles</h2>
+      <h2 class= "Userprofile h2">User Profiles</h2>
       <div className="user-list">
         {users.map((user) => (
           <div key={user.id} className="user-card">
