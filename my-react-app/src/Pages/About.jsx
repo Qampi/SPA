@@ -14,7 +14,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div>
+    <div class=About.css>
       <h1>About Us</h1>
       <p>
         Our mission is to provide a platform for users to support their favorite organizations.
