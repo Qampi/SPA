@@ -1,0 +1,49 @@
+/* Home.css */
+
+.Home {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 50px;
+background-color: #f0f0f0;
+}
+
+.Home h1 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #333;
+}
+
+.Home p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 40px;
+color: #666;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+.Home {
+padding: 30px;
+}
+.Home h1 {
+font-size: 28px;
+}
+.Home p {
+font-size: 16px;
+}
+}
+
+@media (max-width: 480px) {
+.Home {
+padding: 20px;
+}
+.Home h1 {
+font-size: 24px;
+}
+.Home p {
+font-size: 14px;
+}
+}
