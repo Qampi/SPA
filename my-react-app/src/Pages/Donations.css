@@ -1,0 +1,71 @@
+/* Donation.css */
+
+.Donation {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Donation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Donation form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Donation label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Donation input, .Donation textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Donation textarea {
+  resize: vertical;
+}
+
+.Donation button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Donation button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .Donation {
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Donation {
+    margin: 10px auto;
+    padding: 5px;
+  }
+  .Donation input, .Donation textarea {
+    margin-bottom: 10px;
+  }
+}
