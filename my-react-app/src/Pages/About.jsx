@@ -11,7 +11,7 @@ function About() {
 
 export default About;*/
 import React from 'react';
-import './About.css'; // Import the CSS file
+import './About.CSS'; // Import the CSS file
 function About() {
   return (
     <div class=About>
