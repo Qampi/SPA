@@ -1,0 +1,40 @@
+/* About. css */
+.About {
+display: flex;
+flex-direction: column; align-items: center;
+padding: 50px;
+background-color: #fofof0;
+}
+.About h1 {
+font-size: 36px; 
+font-weight: bold; 
+margin-bottom: 20px;
+color: #333;
+}
+.About p{
+font-size: 18px; 
+line-height: 1.5; 
+margin-bottom: 40px; 
+color: #666;
+}
+}
+/* Responsive design */
+@media (max-width: 768px) ‹
+About {
+padding: 30px;
+}
+.About h1 {
+font-size: 28px;
+.About p {
+font-size: 16px;
+@media (max-width: 480px) 
+}
+.About {
+padding: 20px;
+}
+.About h1 {
+font-size: 24px;
+}
+.About p{
+font-size: 14px;
+}
