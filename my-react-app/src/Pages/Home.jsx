@@ -23,9 +23,9 @@ function Home() {
 }
 
 export default Home;*/
-jsx
+
 import React from 'react';
-import './Pages.css'; // Import the CSS file
+import './Home.css'; // Import the CSS file
 
 function Home() {
   return (

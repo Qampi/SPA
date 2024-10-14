@@ -1,18 +1,18 @@
 import React from 'react';
-import '.Userprofile.css'; //Import the CSS file
+import './Userprofile.css'; //Import the CSS file
 // Sample data: list of users
 const users = [
   {
-    class = "Usercard 1",
+    class : "Usercard 1",
     id: 1,
     name: 'John Doe',
     age: 28,
     email: 'john@example.com',
     location: 'New York',
-    interests: ['UNICEF (Global education initiative']
+    interests: ['UNICEF Global education initiative']
   },
   {
-    class = "Usercard 2",
+    class : "Usercard 2",
     id: 2,
     name: 'Jane Smith',
     age: 34,
@@ -21,7 +21,7 @@ const users = [
     interests: ['UCT Lung Cancer Institute']
   },
   {
-    class = "Usercard 3",
+    class : "Usercard 3",
     id: 3,
     name: 'Alex Johnson',
     age: 23,

@@ -92,7 +92,7 @@ function Donation() {
 export default Donation;*/
 
 import React, { useState } from 'react';
-import './Donation.css'; // Import the CSS file
+import './Donations.css'; // Import the CSS file
 
 function Donation() {
   const [amount, setAmount] = useState(0);
@@ -155,3 +155,4 @@ function Donation() {
     </div>
   );
 }
+export default Donation;
